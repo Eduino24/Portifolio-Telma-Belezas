@@ -14,8 +14,8 @@ const TELMA_CONFIG = {
   phoneDisplay: "+244 955 936 510",
   phoneRaw: "244955936510", // Formato internacional WhatsApp (Angola +244)
   whatsappMessage: "Olá, Telma Belezas! Gostaria de saber mais sobre os seus serviços de maquilhagem e verificar disponibilidade de agendamento.",
-  instagramHandle: "Telma Pukilas",
-  instagramUrl: "https://www.instagram.com/telmapukilas",
+  instagramHandle: "@telma_pukilas",
+  instagramUrl: "https://www.instagram.com/telma_pukilas",
   email: "contacto@telmabezas.com",
   locationDisplay: "Benguela, Angola",
   serviceArea: "Atendimento exclusivo em Estúdio e ao Domicílio / Hotéis em Benguela",

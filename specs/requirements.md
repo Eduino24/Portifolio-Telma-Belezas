@@ -63,6 +63,6 @@ Desenvolver uma aplicação web estática multipágina utilizando exclusivamente
 
 Conforme estipulado no documento de especificação, não são inventados dados não fornecidos pela profissional. Os seguintes itens possuem valores de demonstração claramente assinalados com aviso de personalização:
 1. **Número de Telefone/WhatsApp oficial de Angola:** Configurado e ativo como `+244 955 936 510` (raw: `244955936510`).
-2. **Nome de utilizador do Instagram:** Configurado como `Telma Pukilas` (`https://www.instagram.com/telmapukilas`).
+2. **Nome de utilizador do Instagram:** Configurado como `@telma_pukilas` (`https://www.instagram.com/telma_pukilas`).
 3. **Endereço físico/Estúdio:** Província de Benguela, Angola (com opção de atendimento ao domicílio / estúdio).
 4. **Tabela de Preços exata:** Indicada como "Sob consulta / A partir de [Valor Provisório]" para evitar promessas comerciais falsas.

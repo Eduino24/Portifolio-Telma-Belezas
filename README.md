@@ -61,8 +61,8 @@ const TELMA_CONFIG = {
   phoneRaw: "244955936510",          // Formato internacional sem '+' para o link do WhatsApp
   
   // Instagram oficial:
-  instagramHandle: "Telma Pukilas",
-  instagramUrl: "https://www.instagram.com/telmapukilas",
+  instagramHandle: "@telma_pukilas",
+  instagramUrl: "https://www.instagram.com/telma_pukilas",
   
   // Localização e Horário:
   locationDisplay: "Benguela, Angola",
