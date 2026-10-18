@@ -980,3 +980,149 @@
   border-radius: var(--radius-sm);
   font-style: normal;
 }
+
+/* --------------------------------------------------------------------------
+   9. LAYOUTS MODULARES (Sobre Mim, Serviços e Contactos)
+   -------------------------------------------------------------------------- */
+/* Sobre Mim */
+.about-hero-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.about-photo-wrap {
+  position: relative;
+  max-width: 440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.about-photo-frame {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  border: 8px solid #FFFFFF;
+  background-color: var(--color-nude-light);
+}
+
+.about-photo-img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  object-position: center 15%;
+}
+
+.about-floating-badge {
+  position: absolute;
+  bottom: 20px;
+  right: -15px;
+  background: #FFFFFF;
+  padding: 1rem 1.4rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-hover);
+  border: 1px solid var(--color-beige-soft);
+  max-width: 90%;
+}
+
+.about-commitment-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.about-commitment-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.about-commitment-img {
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  height: 260px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Serviços */
+.services-catalog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.service-detail-card {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 3.5rem;
+  align-items: center;
+  background: #FFFFFF;
+  padding: 2.5rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--color-beige-soft);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.service-detail-card:hover {
+  box-shadow: var(--shadow-hover);
+}
+
+.service-detail-media {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  height: 100%;
+  min-height: 380px;
+}
+
+.service-detail-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.service-detail-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Contactos */
+.contact-page-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 4rem;
+  align-items: flex-start;
+}
+
+.contact-card-box {
+  background-color: #FFFFFF;
+  padding: 2.5rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--color-beige-soft);
+}
+
+/* Grids Compartilhados Resilientes */
+.home-about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+

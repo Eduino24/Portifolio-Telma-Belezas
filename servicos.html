@@ -72,15 +72,15 @@
     <section class="section" aria-label="Catálogo de Serviços">
       <div class="container">
         
-        <div style="display: flex; flex-direction: column; gap: 4rem;">
+        <div class="services-catalog-list">
 
           <!-- SERVIÇO 1: NOIVAS -->
-          <article id="noivas" style="display: grid; grid-template-columns: 1fr 1.15fr; gap: 3.5rem; align-items: center; background: #FFFFFF; padding: 2.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-card); border: 1px solid var(--color-beige-soft);">
-            <div style="border-radius: var(--radius-md); overflow: hidden; height: 100%; min-height: 380px;">
-              <img src="assets/images/trabalhos/trabalho-05.jpeg" alt="Noiva deslumbrante por Telma Belezas" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+          <article id="noivas" class="service-detail-card">
+            <div class="service-detail-media">
+              <img src="assets/images/trabalhos/trabalho-05.jpeg" alt="Noiva deslumbrante por Telma Belezas" class="service-detail-img" loading="lazy">
             </div>
-            <div>
-              <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem;">
+            <div class="service-detail-content">
+              <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem; flex-wrap: wrap;">
                 <span class="section-tagline" style="margin-bottom: 0;">Serviço Assinatura</span>
                 <span class="provisional-badge">Orçamento Sob Consulta</span>
               </div>
@@ -124,12 +124,12 @@
           </article>
 
           <!-- SERVIÇO 2: SOCIAL & CASUAL CHIC -->
-          <article id="social" style="display: grid; grid-template-columns: 1fr 1.15fr; gap: 3.5rem; align-items: center; background: #FFFFFF; padding: 2.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-card); border: 1px solid var(--color-beige-soft);">
-            <div style="border-radius: var(--radius-md); overflow: hidden; height: 100%; min-height: 380px;">
-              <img src="assets/images/trabalhos/trabalho-04.jpeg" alt="Maquilhagem social elegante por Telma Belezas" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+          <article id="social" class="service-detail-card">
+            <div class="service-detail-media">
+              <img src="assets/images/trabalhos/trabalho-04.jpeg" alt="Maquilhagem social elegante por Telma Belezas" class="service-detail-img" loading="lazy">
             </div>
-            <div>
-              <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem;">
+            <div class="service-detail-content">
+              <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem; flex-wrap: wrap;">
                 <span class="section-tagline" style="margin-bottom: 0;">Mais Solicitado</span>
                 <span class="provisional-badge">Disponível</span>
               </div>
@@ -168,12 +168,12 @@
           </article>
 
           <!-- SERVIÇO 3: FESTAS, GALAS & FORMATURAS -->
-          <article id="eventos" style="display: grid; grid-template-columns: 1fr 1.15fr; gap: 3.5rem; align-items: center; background: #FFFFFF; padding: 2.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-card); border: 1px solid var(--color-beige-soft);">
-            <div style="border-radius: var(--radius-md); overflow: hidden; height: 100%; min-height: 380px;">
-              <img src="assets/images/trabalhos/trabalho-07.jpeg" alt="Maquilhagem de formatura e festa" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+          <article id="eventos" class="service-detail-card">
+            <div class="service-detail-media">
+              <img src="assets/images/trabalhos/trabalho-07.jpeg" alt="Maquilhagem de formatura e festa" class="service-detail-img" loading="lazy">
             </div>
-            <div>
-              <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem;">
+            <div class="service-detail-content">
+              <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem; flex-wrap: wrap;">
                 <span class="section-tagline" style="margin-bottom: 0;">Noite & Glamour</span>
                 <span class="provisional-badge">Sob Consulta</span>
               </div>
@@ -212,12 +212,12 @@
           </article>
 
           <!-- SERVIÇO 4: EDITORIAL & SESSÕES FOTOGRÁFICAS -->
-          <article id="editorial" style="display: grid; grid-template-columns: 1fr 1.15fr; gap: 3.5rem; align-items: center; background: #FFFFFF; padding: 2.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-card); border: 1px solid var(--color-beige-soft);">
-            <div style="border-radius: var(--radius-md); overflow: hidden; height: 100%; min-height: 380px;">
-              <img src="assets/images/trabalhos/trabalho-03.jpeg" alt="Maquilhagem editorial para ensaio fotográfico" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+          <article id="editorial" class="service-detail-card">
+            <div class="service-detail-media">
+              <img src="assets/images/trabalhos/trabalho-03.jpeg" alt="Maquilhagem editorial para ensaio fotográfico" class="service-detail-img" loading="lazy">
             </div>
-            <div>
-              <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem;">
+            <div class="service-detail-content">
+              <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem; flex-wrap: wrap;">
                 <span class="section-tagline" style="margin-bottom: 0;">Profissional & Marcas</span>
                 <span class="provisional-badge">Diária / Pacote</span>
               </div>
@@ -272,7 +272,7 @@
           </p>
         </div>
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem;">
+        <div class="steps-grid">
           
           <div style="background: #FFFFFF; padding: 2rem; border-radius: var(--radius-md); box-shadow: var(--shadow-subtle); text-align: center;">
             <div style="width: 48px; height: 48px; border-radius: 50%; background-color: var(--color-nude-light); color: var(--color-brown-dark); font-family: var(--font-serif); font-size: 1.4rem; font-weight: 700; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem auto;">1</div>
