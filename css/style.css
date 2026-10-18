@@ -1,0 +1,260 @@
+/* ==========================================================================
+   TELMA BELEZAS — ESTILOS BASE & VARIÁVEIS DE DESIGN SYSTEM
+   Projeto: Portfólio Profissional de Maquilhadora
+   Metodologia: Spec-Driven Development (SDD)
+   ========================================================================== */
+
+/* Fontes do Google Fonts com excelente legibilidade e elegância editorial */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Paleta Obrigatória do Documento */
+  --color-nude-light: #F5EAE2;
+  --color-beige-soft: #E7D3C3;
+  --color-rose-delicate: #D9A6AC;
+  --color-rose-deep: #B76E79;
+  --color-gold-elegant: #C5A15B;
+  --color-brown-dark: #4A3430;
+  --color-white-warm: #FFFCF9;
+
+  /* Variações e Tons Derivados para Equilíbrio Visual */
+  --color-brown-text: #3D2B28;
+  --color-brown-muted: #6B5550;
+  --color-gold-hover: #b08d47;
+  --color-gold-light: #f4ecdf;
+  --color-rose-light: #faeef0;
+  --color-overlay: rgba(74, 52, 48, 0.75);
+  --color-border: rgba(183, 110, 121, 0.2);
+  --color-card-bg: #FFFFFF;
+
+  /* Tipografia */
+  --font-serif: 'Playfair Display', 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Espaçamento */
+  --space-xs: 0.5rem;   /* 8px */
+  --space-sm: 1rem;     /* 16px */
+  --space-md: 1.5rem;   /* 24px */
+  --space-lg: 2.5rem;   /* 40px */
+  --space-xl: 4rem;     /* 64px */
+  --space-2xl: 6rem;    /* 96px */
+
+  /* Bordas e Sombras */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-pill: 9999px;
+  --shadow-subtle: 0 4px 20px rgba(74, 52, 48, 0.05);
+  --shadow-card: 0 10px 30px rgba(74, 52, 48, 0.08);
+  --shadow-hover: 0 16px 40px rgba(74, 52, 48, 0.14);
+  --shadow-gold: 0 8px 24px rgba(197, 161, 91, 0.25);
+
+  /* Transições suaves */
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Layout */
+  --container-max: 1200px;
+  --container-wide: 1360px;
+  --header-height: 80px;
+}
+
+/* Reset Moderno */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-white-warm);
+  color: var(--color-brown-text);
+  line-height: 1.65;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+img, picture, svg, video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* Acessibilidade de Foco */
+:focus-visible {
+  outline: 2px solid var(--color-gold-elegant);
+  outline-offset: 3px;
+}
+
+/* Tipografia Base */
+h1, h2, h3, h4, .font-serif {
+  font-family: var(--font-serif);
+  color: var(--color-brown-dark);
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: clamp(2.25rem, 5vw, 3.75rem);
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: clamp(1.85rem, 4vw, 2.75rem);
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-size: clamp(1.35rem, 2.5vw, 1.85rem);
+}
+
+p {
+  color: var(--color-brown-muted);
+  font-size: 1.05rem;
+  margin-bottom: 1.25rem;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+.text-gold {
+  color: var(--color-gold-elegant);
+}
+
+.text-rose {
+  color: var(--color-rose-deep);
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Contêineres de Layout */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.container-wide {
+  width: 100%;
+  max-width: var(--container-wide);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* Seções Padrão */
+.section {
+  padding: var(--space-2xl) 0;
+  position: relative;
+}
+
+.section-sm {
+  padding: var(--space-xl) 0;
+}
+
+.section-bg-nude {
+  background-color: var(--color-nude-light);
+}
+
+.section-bg-warm {
+  background-color: var(--color-white-warm);
+}
+
+.section-header {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto var(--space-xl) auto;
+}
+
+.section-tagline {
+  display: inline-block;
+  font-family: var(--font-sans);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  font-weight: 600;
+  color: var(--color-rose-deep);
+  margin-bottom: 0.75rem;
+  background-color: var(--color-rose-light);
+  padding: 0.35rem 1rem;
+  border-radius: var(--radius-pill);
+}
+
+.section-title {
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.section-subtitle {
+  color: var(--color-brown-muted);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Linha Divisória Dourada Refinada */
+.gold-divider {
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--color-gold-elegant), transparent);
+  margin: 1.25rem auto;
+}
+
+/* Skip Link para Acessibilidade */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 1rem;
+  background: var(--color-brown-dark);
+  color: var(--color-white-warm);
+  padding: 0.75rem 1.25rem;
+  z-index: 9999;
+  border-radius: var(--radius-sm);
+  transition: top var(--transition-fast);
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+/* Respeito à preferência por movimento reduzido */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
